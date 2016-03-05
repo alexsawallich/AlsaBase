@@ -1,0 +1,21 @@
+{
+    "name": "alexsawallich/alsa-base",
+    "description": "General module, with some generous classes for ZF2",
+    "type": "library",
+    "homepage": "http://alex.tools",
+    "authors": [
+        {
+            "name": "Alex Sawallich",
+            "email": "kontakt@alexsawallich.de",
+            "homepage": "http://alex.tools"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-0": {
+            "AlsaBase": "src/"
+        }
+    }
+}
