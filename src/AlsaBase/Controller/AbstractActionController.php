@@ -28,4 +28,15 @@ class AbstractActionController extends Original
         
         return $this->translator->translate($message, $textDomain, $locale);
     }
+    
+    /**
+     * Easy access to the headtitle-view-helper.
+     * 
+     * @param stirng $headtitle
+     * @return string
+     */
+    public function headtitle($headtitle)
+    {
+        return $this->getServiceLocator()->get('viewhelpermanager')->__invoke($headtitle);
+    }
 }
