@@ -37,6 +37,6 @@ class AbstractActionController extends Original
      */
     public function headtitle($headtitle)
     {
-        return $this->getServiceLocator()->get('viewhelpermanager')->__invoke($headtitle);
+        return $this->getServiceLocator()->get('viewhelpermanager')->get('headtitle')->__invoke($headtitle);
     }
 }
